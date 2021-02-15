@@ -1,9 +1,8 @@
 <?php
-$stdin = fopen("php://stdin", "r+");
-echo 'Type text: ';
-$text = trim(fgets(STDIN));
-echo 'What to cut: ';
-$cut = trim(fgets(STDIN));
-$result = str_replace($cut, "", $text);
-echo 'Result: '.$result.PHP_EOL;
+if($argv){
+  $text = isset($argv[1]) ? $argv[1] : '';
+  $cut = isset($argv[2]) ? $argv[2] : '';
+  $result = str_replace($cut, "", $text);
+  echo $result.PHP_EOL;
+}
 ?>
