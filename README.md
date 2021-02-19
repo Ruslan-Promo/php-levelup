@@ -7,10 +7,8 @@
 Пример запуска и сценария выполнения
 
 ```bash
-php /php-levelup/p2/p2.php
-Type text: Hello world!
-What to cut: world
-Result: Hello !
+php /php-levelup/p2/p2.php 'Hello world!' 'world'
+Hello !
 ```
 
 ## Website
