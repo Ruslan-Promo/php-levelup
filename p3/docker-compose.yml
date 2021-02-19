@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+   php74:
+      image: php:7.4
+      volumes:
+         - ./file:/var/www/file
+      container_name: php-74
+      command: php -f /var/www/file/script.php
